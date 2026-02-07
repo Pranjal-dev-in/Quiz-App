@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(51, 51, 250);
+}
+.start-box {
+  height: 550px;
+  width: 600px;
+  background-color: aliceblue;
+  overflow: hidden;
+  border-radius: 5px;
+  text-align: center;
+}
+.start-box h1 {
+  font-size: 35px;
+  margin: 50px 0;
+}
+.start-box p {
+  font-size: 25px;
+  margin: 25px 0;
+}
+.start-box ul {
+  text-align: left;
+  font-size: 25px;
+  list-style: square;
+  margin: 40px 0 60px 100px;
+  line-height: 35px;
+}
+@media screen and (min-width: 600px) {
+  .start-box ul {
+    margin-left: 200px;
+  }
+}
+.start-box button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  background-color: rgb(92, 92, 243);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.main-container {
+  height: 550px;
+  width: 600px;
+  background-color: aliceblue;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.288);
+  position: relative;
+}
+.navbar h1 {
+  font-size: 24px;
+}
+.timer-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(213, 213, 255);
+  height: 45px;
+  width: 140px;
+  border-radius: 2px;
+}
+.timer {
+  height: 35px;
+  width: 45px;
+  background-color: rgb(22, 22, 67);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+.timer p {
+  color: beige;
+  font-weight: 900;
+}
+.navbar input {
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.question-box {
+  padding: 30px;
+}
+.question-box p {
+  font-size: 24px;
+  font-weight: 700;
+  word-spacing: 1px;
+  margin-bottom: 20px;
+}
+.option-btn {
+  height: 45px;
+  width: 100%;
+  background-color: rgb(235, 235, 248);
+  margin-bottom: 15px;
+  outline: none;
+  border: 1px solid rgb(109, 109, 246);
+  border-radius: 3px;
+  text-align: left;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 19px;
+}
+.question-box .submit {
+  height: 45px;
+  width: 110px;
+  border: none;
+  background-color: rgb(92, 92, 243);
+  color: white;
+  font-weight: 600;
+  border-radius: 3px;
+  position: relative;
+  left: 40%;
+  top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.next-question {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.447);
+}
+.next-question p {
+  margin-left: 35px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.next-question button {
+  height: 40px;
+  width: 120px;
+  font-weight: 600;
+  margin-right: 40px;
+  color: white;
+  background-color: rgb(92, 92, 243);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.total-score {
+  height: 550px;
+  width: 600px;
+  background-color: aliceblue;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+}
+.total-score h2 {
+  margin: 45px 0;
+  font-size: 30px;
+}
+.grade-para {
+  font-size: 20px;
+  line-height: 30px;
+}
+.total-correct {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 45px 0;
+  font-size: 20px;
+}
+#time-taken {
+  margin: 50px 0;
+  font-size: 20px;
+}
+#restart,
+#home {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(109, 109, 246);
+  color: white;
+  font-size: 18px;
+  margin: 15px 60px;
+}
+#home {
+  width: 110px;
+}
+
+.hidden {
+  display: none;
+}
+
+.clicked {
+  background-color: rgb(206, 206, 248);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.474);
+}
+
+.rightAns {
+  border: 1px solid green;
+  background-color: rgb(171, 248, 171);
+}
+.wrongAns {
+  border: 1px solid red;
+  background-color: rgb(245, 195, 195);
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}

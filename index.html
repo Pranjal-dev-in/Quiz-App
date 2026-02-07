@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="start-box">
+      <h1>🎯 JS QUIZ APP</h1>
+      <p>Test your JavaScript skills</p>
+      <ul>
+        <li>10 Questions</li>
+        <li>10 sec per questions</li>
+        <li>No negetive marking</li>
+      </ul>
+      <button class="start">Start Quiz</button>
+    </div>
+    <div class="main-container hidden">
+      <div class="navbar">
+        <h1>Awesome Quiz App</h1>
+        <div class="timer-box">
+          <p>Time Left</p>
+          <div class="timer">
+            <p id="time">10</p>
+          </div>
+        </div>
+        <input
+          type="range"
+          min="0"
+          max="10"
+          step="1"
+          value="0"
+          id="timer-range"
+        />
+      </div>
+
+      <div class="question-box">
+        <p id="ques">1. What does HTML stand for?</p>
+        <button class="option-btn" id="btn1">op 1</button>
+        <button class="option-btn" id="btn2">op 2</button>
+        <button class="option-btn" id="btn3">op 3</button>
+        <button class="option-btn" id="btn4">op 4</button>
+        <button class="submit hidden">Submit</button>
+      </div>
+
+      <div class="next-question">
+        <p id="score-record"><b>1</b> of <b>5</b> Questions</p>
+        <button class="nxtQue hidden">Next Que</button>
+      </div>
+    </div>
+
+    <div class="total-score hidden">
+      <h2>🎉 Quiz Completed !</h2>
+      <p class="grade-para">Grade A</p>
+      <div class="total-correct">
+        <p id="corr">✅Correct : 7</p>
+        <p id="wrong">❌Wrong : 3</p>
+      </div>
+      <p id="time-taken">⏱️ Time Taken : 01:25</p>
+      <div class="restart-btn">
+        <button id="restart">Restart Quiz</button>
+        <button id="home">Home</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
